@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useMenu } from "../../services/Menu/getMenu";
 import MenuCard from "../../components/menuCard";
+import Loader from "../../components/Loader";
 export default function Menu() {
     const {MenuData , isPending , error} = useMenu();
     const [filteredMenu , setFilteredMenu] = useState([]);
@@ -14,7 +15,7 @@ export default function Menu() {
         }
     }, [MenuData]);
     if(isPending){
-        return <div>loading...</div>
+        return <Loader />
     }
     if(error){
         return <div>{error.message}</div>
