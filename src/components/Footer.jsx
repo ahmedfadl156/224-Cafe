@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Coffee, MapPin, Phone, Mail, Clock, Facebook, Instagram, Twitter } from "lucide-react";
+import { Coffee, MapPin, Phone, Mail, Clock, Facebook, Instagram,  } from "lucide-react";
 import { Link } from "react-router-dom";
+import { FaTiktok , FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   const footerLinks = {
@@ -26,9 +27,10 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: <Facebook className="w-5 h-5" />, url: "#", name: "Facebook" },
-    { icon: <Instagram className="w-5 h-5" />, url: "#", name: "Instagram" },
-    { icon: <Twitter className="w-5 h-5" />, url: "#", name: "Twitter" },
+    { icon: <Facebook className="w-5 h-5" />, url: "https://www.facebook.com/profile.php?id=61581029690336", name: "Facebook" },
+    { icon: <Instagram className="w-5 h-5" />, url: "https://www.instagram.com/224co_ffee?fbclid=IwY2xjawNzC1VleHRuA2FlbQIxMABicmlkETFGMGZmRXQ1dnl2RUVQUlp3AR51SA1L1TFBem9RbRvze_M4BfxJohW8NEOGWv82iWfgLA_YDm5lLRW56vt4Ew_aem_j10i9WLxvYK2LYl2fv2LcA", name: "Instagram" },
+    { icon: <FaTiktok className="w-5 h-5" />, url: "https://www.tiktok.com/@224co_ffee?fbclid=IwY2xjawNzC1dleHRuA2FlbQIxMABicmlkETFGMGZmRXQ1dnl2RUVQUlp3AR6-0d2SnyCWjRfPnTTwXcdPEqyoDJjUkBL9Q6dmyJDAjpZ5EPVxX4O5sFgyPw_aem_qMi_oCy_uONoJ0V4S5pxuQ", name: "TikTok" },
+    { icon: <FaWhatsapp className="w-5 h-5" />, url: "https://wa.me/201023764309", name: "WhatsApp" },
   ];
 
   return (
@@ -60,6 +62,7 @@ export default function Footer() {
                 <motion.a
                   key={index}
                   href={social.url}
+                  target="_blank"
                   whileHover={{ scale: 1.1, y: -3 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-10 h-10 bg-[#D4A574]/10 hover:bg-[#D4A574] rounded-full flex items-center justify-center transition-colors group"

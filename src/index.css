@@ -6,3 +6,7 @@
   --font-family-tajawal: 'Tajawal', sans-serif;
   --font-family-cairo: 'Cairo', sans-serif;
 }
+
+.phone{
+  direction: rtl;
+}

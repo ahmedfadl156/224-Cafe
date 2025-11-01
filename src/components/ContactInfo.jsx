@@ -6,8 +6,8 @@ export default function ContactInfo() {
     {
       icon: Phone,
       title: 'الهاتف',
-      info: '+20 123 456 7890',
-      link: 'tel:+201234567890'
+      info: '01023764309',
+      link: 'tel:01023764309'
     },
     {
       icon: Mail,
@@ -18,13 +18,13 @@ export default function ContactInfo() {
     {
       icon: MapPin,
       title: 'العنوان',
-      info: 'القاهرة، مصر',
+      info: 'دمياط الجديدة مجاورة 28 بجانب نادى وادى دجلة',
       link: null
     },
     {
       icon: Clock,
       title: 'ساعات العمل',
-      info: 'يومياً من 9 صباحاً - 4 مساءً',
+      info: 'يومياً من 9 صباحاً - 5 صباحاً',
       link: null
     }
   ];
@@ -55,7 +55,7 @@ export default function ContactInfo() {
                   {detail.info}
                 </a>
               ) : (
-                <p className="text-gray-600 font-cairo">{detail.info}</p>
+                <p className="text-gray-600 font-cairo phone">{detail.info}</p>
               )}
             </div>
           </div>
